@@ -1,0 +1,12 @@
+{
+  "name": "opencode-telegram-notify",
+  "version": "0.1.0",
+  "description": "OpenCode plugin that sends Telegram notifications for session events",
+  "type": "module",
+  "main": "plugin.js",
+  "exports": {
+    ".": "./plugin.js"
+  },
+  "keywords": ["opencode", "plugin", "telegram", "notifications"],
+  "license": "MIT"
+}
