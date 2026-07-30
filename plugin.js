@@ -1,4 +1,12 @@
 export const TelegramNotify = async () => {
+  try {
+    const text = await Bun.file(import.meta.dirname + '/.env').text()
+    for (const line of text.split('\n')) {
+      const m = line.match(/^([^=]+)=(.+)/)
+      if (m) process.env[m[1].trim()] = m[2].trim()
+    }
+  } catch {}
+
   const botToken = process.env.TELEGRAM_BOT_TOKEN
   const chatId = process.env.TELEGRAM_CHAT_ID
   if (!botToken || !chatId) return {}
