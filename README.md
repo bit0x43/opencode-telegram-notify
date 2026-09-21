@@ -27,8 +27,8 @@ cp .env.example .env
 ```
 
 ```ini
-TELEGRAM_BOT_TOKEN=8823686433:AAGl2S1e_xYAKGxC8fLO74TRvTVnE5zlpnM
-TELEGRAM_CHAT_ID=123456789
+TELEGRAM_BOT_TOKEN=your_bot_token_here
+TELEGRAM_CHAT_ID=your_chat_id_here
 ```
 
 ### 4. Add to opencode
